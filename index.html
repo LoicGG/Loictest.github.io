@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!--     -----------------HEAD SECTION------------------     -->
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Jacky and Co.</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="prism.css"/><!--Styler le conteneur de code-->
+  </head>
+
+<!--     -----------------BODY SECTION------------------     -->
+<body>
+<!--     -----------------BARRE DE NAVIGATION-----------     -->
+  <nav>    
+    <ul class="barreNav">
+      <li><a href="#sectionHtml" alt="lien vers la section HTML">HTML</a></li>
+      <li><a href="#sectionCSS" alt="lien vers la section CSS">CSS</a></li>
+      <li><a href="#sectionJavascript" alt="lien vers la section Javacript">Javascript</a></li>
+      <li><a href="#sectionJava" alt="lien vers la section Java">Java?</a></li>
+    </ul>
+  </nav>
+<!--     -----------------FIN DE BARRE DE NAVIGATION-------     -->
+
+  <header>
+    <h1 class="hero">Ce qu'il faut que je sache en HTML, CSS et Javascript pour coder un site web en 2022</h1>
+  </header>
+
+<!-- ---------------------CONTENU MAIN------------------ -->
+  <main>
+<!-- ---------------------SECTION HTML------------------ -->
+    <section>
+      <hr/>
+      <h2 id="sectionHtml">HTML</h2>
+      <hr/>
+      <h3>HTML Boilerplate</h3>
+      <p>Le boilerplate est le code <u>minimal</u> à rédiger pour créer une page HTML.</p>
+      <p>Le voici: </p>
+  <!--     -----------------CONTENEUR DE CODE------------------     -->
+      <div class="conteneurDeCode">
+        <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+    &lt;html lang="fr"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+        &lt;title&gt;My Website&lt;/title&gt;
+        &lt;link rel="stylesheet" href="./style.css"&gt;<!-- &lt;link rel="icon" href="./favicon.ico" type="image/x-icon"&gt;-->
+      &lt;/head&gt;
+      &lt;body&gt;        
+      <!--&lt;script src="index.js"&gt;&lt;/script&gt;-->
+      &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+      </div>
+  <!--     -----------------FIN DU CONTENEUR DE CODE------------    -->
+      <h3>Les balises HTML ou Tags</h3>
+      <p>On distingue deux types de balises dans le langage:
+        <ul>
+            <li>Les balises ouvrantes et fermantes qui avec leur contenu, forment un élément.</li>
+            <li>Les balises uniques ou "orphelines" forment un élement sans contenu textuel.</li>
+        </ul>
+      </p>
+      <h4>Une liste des balises couramment utilisées.</h4>
+  <!-- ---------------------TABLEAU DES DIFFERENTES BALISES------   -->
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Usage</th>
+            <th scope="col">Elément</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--Balises de premier niveau-->
+          <tr>
+            <td>Racine</td>
+            <td>&lthtml&gt</td>
+            <td>Tout est contenu dans cet élément.</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Premier niveau</td>
+            <td>&lthead&gt</td>
+            <td>En-tête de la page</td>
+          </tr>
+          <tr>
+            <td>&ltbody&gt</td>
+            <td>Corps de la page</td>
+          </tr>
+          <!--Balises d'en-tête-->
+          <tr>
+            <td rowspan="4">En-tête</td>
+            <td>&ltlink/&gt</td>
+            <td>Liaison avec une feuille CSS (balise orpheline)</td>
+          </tr>
+          <tr>
+            <td>&ltmeta/&gt</td>
+            <td>Métadonnées de la page. (mots-clefs, charset)(orpheline)</td>
+          </tr>
+          <tr>
+            <td>&ltstyle&gt</td>
+            <td>Code CSS</td>
+          </tr>
+          <tr>
+            <td>&lttitle&gt</td>
+            <td>Titre de la page html</td>
+          </tr>
+          <!--Balises de section-->
+          <tr>
+            <td rowspan="6">Section</td>
+            <td>&ltheader&gt</td>
+            <td>En-tête</td>
+          </tr>
+          <tr>
+            <td>&ltfooter&gt</td>
+            <td>Pied de page</td>
+          </tr>
+          <tr>
+            <td>&ltnav&gt</td>
+            <td>Barre de navigation</td>
+          </tr>
+          <tr>
+            <td>&ltsection&gt</td>
+            <td>Section générique d'un document.</td>
+          </tr>
+          <tr>
+            <td>&ltarticle&gt</td>
+            <td>Composition autonome d'un document</td>
+          </tr>
+          <tr>
+            <td>&ltaside&gt</td>
+            <td>Désigne une partie indirectement liée au document</td>
+          </tr> 
+          <!-- Structure du texte -->
+          <tr>
+            <td rowspan="26">Structure du texte</td>
+            <td>&ltabbr&gt</td>
+            <td>Abréviation</td>
+          </tr>
+          <tr>
+            <td>&ltblockquote&gt</td>
+            <td>Citation</td>
+          </tr>
+          <tr>
+            <td>&ltcite&gt</td>
+            <td>Citation du titre d'une oeuvre</td>
+          </tr>
+          <tr>
+            <td>&ltq&gt</td>
+            <td>Citation courte</td>
+          </tr>
+          <tr>
+            <td>&ltem&gt</td>
+            <td>Mise en valeur normale</td>
+          </tr>
+          <tr>
+            <td>&ltmark&gt</td>
+            <td>Mise en valeur visuelle</td>
+          </tr>
+          <tr>
+            <td>&lth1...h6&gt</td>
+            <td>Titre de niveau 1 à 6</td>
+          </tr>
+          <tr>
+            <td>&ltimg/&gt</td>
+            <td>Insertion d'une image (orpheline)</td>
+          </tr>
+          <tr>
+            <td>&ltfigure&gt</td>
+            <td>Figure, image, code</td>
+          </tr>
+          <tr>
+            <td>&ltfigcaption&gt</td>
+            <td>Description de la figure</td>
+          </tr>
+          <tr>
+            <td>&ltaudio&gt</td>
+            <td>Son</td>
+          </tr>
+          <tr>
+            <td>&ltvideo&gt</td>
+            <td>Vidéo</td>
+          </tr>
+          <tr>
+            <td>&ltsource&gt</td>
+            <td>Format source pour l'audio et la vidéo</td>
+          </tr>
+          <tr>
+            <td>&ltbr/&gt</td>
+            <td>Retour à la ligne (orpheline)</td>
+          </tr>
+          <tr>
+            <td>&ltp&gt</td>
+            <td>Paragraphe</td>
+          </tr>
+          <tr>
+            <td>&lthr/&gt</td>
+            <td>Créer un ligne de séparation horizontale</td>
+          </tr>
+          <tr>
+            <td>&ltaddress&gt</td>
+            <td>Adresse de contact</td>
+          </tr>
+          <tr>
+            <td>&ltdel&gt</td>
+            <td>Texte supprimé</td>
+          </tr>
+          <tr>
+            <td>&ltins&gt</td>
+            <td>Texte inséré</td>
+          </tr>
+          <tr>
+            <td>&ltdfn&gt</td>
+            <td>Définition</td>
+          </tr>
+          <tr>
+            <td>&ltkbd&gt</td>
+            <td>Saisie clavier</td>
+          </tr>
+          <tr>
+            <td>&ltpre&gt</td>
+            <td>Affichage formatté, retranscrit les espaces</td>
+          </tr>
+          <tr>
+            <td>&ltcode&gt</td>
+            <td>Un fragment de code</td>
+          </tr>
+          <tr>
+            <td>&ltdata&gt</td>
+            <td>Contenu interprétable par une machine</td>
+          </tr>
+          <tr>
+            <td>&ltprogress&gt</td>
+            <td>Affiche une barre de progression</td>
+          </tr>
+          <tr>
+            <td>&lttime&gt</td>
+            <td>Une heure, une date, une durée. Attribut datetime.</td>
+          </tr>
+          <!--Balises de liste-->
+          <tr>
+            <td rowspan="6">Liste</td>
+            <td>&ltul&gt</td>
+            <td>Liste désordonée <i>(unordered list)</i></td>
+          </tr>
+          <tr>
+            <td>&ltol&gt</td>
+            <td>Liste ordonnée <i>(orderded list)</i></td>
+          </tr>
+          <tr>
+            <td>&ltli&gt</td>
+            <td>Elément de liste <i>(list item)</i></td>
+          </tr>
+          <tr>
+            <td>&ltdl&gt</td>
+            <td>Englobe la liste de définitions</td>
+          </tr>
+          <tr>
+            <td>&ltdt&gt</td>
+            <td>Le terme à définir</td>
+          </tr>
+          <tr>
+            <td>&ltdd&gt</td>
+            <td>La définition du terme</td>
+          </tr>
+          <!--Balises de tableau-->
+          <tr>
+            <td rowspan="8">Tableau</td>
+            <td>&lttable&gt</td>
+            <td>Tableau</td>
+          </tr>
+          <tr>
+            <td>&ltcaption&gt</td>
+            <td>Légende de tableau. A placer après &lttable&gt</td>
+          </tr>
+          <tr>
+            <td>&lttr&gt</td>
+            <td>Rangée de tableau</td>
+          </tr>
+          <tr>
+            <td>&ltth&gt</td>
+            <td>Défini une cellule d'en-tête</td>
+          </tr>
+          <tr>
+            <td>&lttd&gt</td>
+            <td>Défini une cellule standard</td>
+          </tr>
+          <tr>
+            <td>&ltthead&gt</td>
+            <td>Structure d'en-tête du tableau.</td>
+          </tr>
+          <tr>
+            <td>&lttbody&gt</td>
+            <td>Structure de corps du tableau</td>
+          </tr>
+          <tr>
+            <td>&lttfoot&gt</td>
+            <td>Structure pied-de-page du tableau</td>
+          </tr>
+          <!--Balises de formulaire-->
+          <tr>
+            <td rowspan="9">Formulaire</td>
+            <td>&ltform&gt</td>
+            <td>Formulaire nécessite l'attribut method ou action</td>
+          </tr>
+          <tr>
+            <td>&ltfieldset&gt</td>
+            <td>Grouper les éléments d'un formulaire</td>
+          </tr>
+          <tr>
+            <td>&ltlegend&gt</td>
+            <td>Légende un élément fieldset</td>
+          </tr>
+          <tr>
+            <td>&ltinput&gt</td>
+            <td>Champ de données pour l'utilisateur</td>
+          </tr>
+          <tr>
+            <td>&ltlabel&gt</td>
+            <td>Légende pour input</td>
+          </tr>
+          <tr>
+            <td>&lttextarea&gt</td>
+            <td>Un champ de texte long</td>
+          </tr>
+          <tr>
+            <td>&ltselect&gt</td>
+            <td>Liste de choix</td>
+          </tr>
+          <tr>
+            <td>&ltoption&gt</td>
+            <td>Option dans une list</td>
+          </tr>
+          <tr>
+            <td>&ltoptgroup&gt</td>
+            <td>Groupe d'options dans une liste</td>
+          </tr>
+          <!-- Balises génériques -->
+          <tr>
+            <td rowspan="2">Génériques</td>
+            <td>&ltspan&gt</td>
+            <td>Element inline</td>
+          </tr>
+          <tr>
+            <td>&ltdiv&gt</td>
+            <td>Element block</td>
+          </tr>
+        </tbody>
+      </table>
+  <!-- --------------------- FIN DU TABLEAU DES DIFFERENTES BALISES------   -->
+      <h3>Attributs</h3>
+      <p>Les attributs s'ajoutent aux balises et configurent leurs comportements.</p>
+      <p>Classons les attributs
+        <ul>
+          <li>Attributs universels classiques.</li>
+          <li>Attributs spécifiques.</li>
+          <li>Attributs ajoutés à la version HTML5.</li>
+          <li>Attributs d'évenements.</li>
+          <li>Attributs de données</li>
+        </ul>
+      </p>
+    </section>
+<hr/>
+<!-- ---------------------SECTION CSS------------------ -->
+<section>
+<h2 id="sectionCSS">CSS</h2>
+<hr/>
+<h3>Principes clef:</h3>
+  <h4>Sélecteurs et combinateurs</h4>
+    <h5>Sélecteurs</h5>
+      <p>Cibler une classe - .class</p>
+      <p>Cibler un ID - #id</p>
+      <p>*	est le sélecteur universel, il sélectionne tous les éléments</p>
+    <br/>
+    <h5>Combinateurs</h5>
+      <h6>Combinateurs descendant</h6>
+      <p>E F	Sélectionne tous les éléments F à l’intérieur des éléments E</p>
+      <p>Combinateur enfant</p>
+      <p>Combinateur frère adjacent</p>
+      <p>Combinateur général de frères</p>
+  <p>
+    E, F	Sélectionne tous les éléments de type E et de type F
+    
+    E > F	Sélectionne les éléments F enfants directs des éléments E
+    E + F	Sélectionne tout élément F placé directement après un élément E
+    E~F	Sélectionne tout élément F placé après un élément E dans la page</p>
+  <h4>Les propriétés et leurs valeurs, fonctions et @rules/@media</h4>
+  
+    <h5>Pseudo-classes et pseudo-éléments</h5>
+
+<p>L'écriture des règles</p>
+  <p>Cascade et héritage</p>
+<p>Les boîtes</p>
+<p>Boîtes flexibles: flexbox</p>
+<p>Grilles</p>
+<p>Concepts Majeurs</p>
+
+<p>s>yntaxe et forme du langage</p>
+<p>Pseudo-classes et pseudo-éléments</p>
+<p>article<u>:first-child</u></p>
+</section>
+
+<!-- ---------------------SECTION JAVASCRIPT------------------ -->
+<h2 id="sectionJavascript">Javascript</h2>
+<!-- ---------------------SECTION JAVA------------------ -->
+<h2 id="sectionJava">Java</h2>
+
+</main>
+
+
+
+<!-- ------------------------FOOTER----------------------- -->
+
+
+
+<!-- Le code contenu dans les balises <script> ci-dessous est lié au fichier javascript situé à la racine avec le fichier index.html
+  et il permet la visualisation du code en syntaxe colorée. (cf. aussi la balise <link> dans la partie Head qui renvoie vers prism.css)  -->
+<script src="prism.js"></script>
+
+</body>
+</html>

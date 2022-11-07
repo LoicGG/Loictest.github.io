@@ -1,0 +1,71 @@
+* {
+    font-family: Arial, Helvetica, sans-serif, serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 146);
+}
+
+nav {
+    display: inline-block;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.barreNav {
+    display: flex; /*allows me to modify the position of the li children of this ul (to center them)*/
+    justify-content: space-evenly; /*centering the content of this ul*/
+    list-style-type: none; /*no bullet point for this list*/
+    margin: 0;
+    padding: 0.5rem; /*setting padding around*/
+    border: 0.3rem solid rgb(177, 0, 0);
+    background-color: rgb(206, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    background-color: rgb(206, 0, 0);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: center;
+    padding: 0;
+    border: 1px solid green;
+    margin-top: 3rem;
+}
+
+main {
+    margin: 0.5rem;    
+}
+
+.conteneurDeCode {
+    display: block;
+    font-size: 0.7em;
+    width: fit-content;
+    overflow-x:hidden;
+    width: auto;
+}
+
+table {
+    border-collapse: collapse;
+    display: block; 
+    table-layout: fixed;
+    font-size: 0.8rem;
+    padding-left: 5%;
+    overflow-x:hidden;
+    width: auto;
+
+}
+
+th,td {
+    border: 0.5px solid grey;
+    padding: 2px;
+}
