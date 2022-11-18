@@ -35,7 +35,10 @@
       <hr/>
       <h2 id="sectionHtml">HTML</h2>
       <hr/>
-      <h3>HTML Boilerplate</h3>
+      <p>Une page web dans sa forme la plus essentielle est composée d'un fichier qui se termine par l'extension ".html". 
+        Pour que ce fichier soit exploité par un navigateur, il doit contenir un code minimal appelé "boilerplate."
+      </p>
+      <h3>Boilerplate</h3>
       <p>Le boilerplate est le code <u>minimal</u> à rédiger pour créer une page HTML.</p>
       <p>Le voici: </p>
   <!--     -----------------CONTENEUR DE CODE------------------     -->
@@ -64,12 +67,12 @@
       </p>
       <h4>Une liste des balises couramment utilisées.</h4>
   <!-- ---------------------TABLEAU DES DIFFERENTES BALISES------   -->
-      <table>
+      <table class="tableaudebalises">
         <thead>
           <tr>
             <th scope="col">Usage</th>
             <th scope="col">Elément</th>
-            <th scope="col">Description</th>
+            <th scope="col">Elément</th>
           </tr>
         </thead>
         <tbody>
@@ -348,6 +351,7 @@
           </tr>
         </tbody>
       </table>
+
       <h4>Code HTML des symboles et caractères spéciaux</h4>
       <p>Il s'agit de remplacer les caractères spéciaux d'un texte (&lt;, &gt;, &#123;, &#125;, &amp;, &#124;) par du code html
          (<mark>&amp;lt;</mark> ou <mark>&amp;amp;</mark> ou encore <mark>&amp#123;</mark>, etc...) 
@@ -360,7 +364,7 @@
       <p>Il ne s'agit pas ici d'apprendre le code html de tous les symboles, mais d'avoir à portée la 
         liste des symboles les plus utilisés.</p>
 
-        <table>
+        <table class="tableaudesymboles">
           <thead>
           <tr class="row-1 odd" role="row">
             <th class="column-1" rowspan="1" colspan="1">Symbole</th>
@@ -372,126 +376,425 @@
           </thead>
           <tbody class="row-hover">
           <tr class="row-2 even">
-            <td class="column-1">!</td><td class="column-2">Alt+ 33</td><td class="column-3">&amp;#33;</td><td class="column-4">-</td><td class="column-5">Point d'exclamation</td>
-          </tr><tr class="row-3 odd">
-            <td class="column-1">"</td><td class="column-2">Alt+ 34</td><td class="column-3">&amp;#34;</td><td class="column-4">&amp;quot;</td><td class="column-5">Guillemets à l'anglaise</td>
-          </tr><tr class="row-4 even">
-            <td class="column-1">#</td><td class="column-2">Alt+ 35</td><td class="column-3">&amp;#35;</td><td class="column-4">-</td><td class="column-5">Dièse / Numéro</td>
-          </tr><tr class="row-5 odd">
-            <td class="column-1">$</td><td class="column-2">Alt+ 36</td><td class="column-3">&amp;#36;</td><td class="column-4">&amp;dollar;</td><td class="column-5">Dollar</td>
-          </tr><tr class="row-6 even">
-            <td class="column-1">%</td><td class="column-2">Alt+ 37</td><td class="column-3">&amp;#37;</td><td class="column-4">-</td><td class="column-5">Pourcent</td>
-          </tr><tr class="row-7 odd">
-            <td class="column-1">&amp;</td><td class="column-2">Alt+ 38</td><td class="column-3">&amp;#38;</td><td class="column-4">&amp;amp;</td><td class="column-5">Esperluette</td>
-          </tr><tr class="row-8 even">
-            <td class="column-1">'</td><td class="column-2">Alt+ 39</td><td class="column-3">&amp;#39;</td><td class="column-4">&amp;apos;</td><td class="column-5">Apostrophe</td>
-          </tr><tr class="row-9 odd">
-            <td class="column-1">(</td><td class="column-2">Alt+ 40</td><td class="column-3">&amp;#40;</td><td class="column-4">-</td><td class="column-5">Parenthèse gauche</td>
-          </tr><tr class="row-10 even">
-            <td class="column-1">)</td><td class="column-2">Alt+ 41</td><td class="column-3">&amp;#41;</td><td class="column-4">-</td><td class="column-5">Parenthèse droite</td>
-          </tr><tr class="row-11 odd">
-            <td class="column-1">*</td><td class="column-2">Alt+ 42</td><td class="column-3">&amp;#42;</td><td class="column-4">-</td><td class="column-5">Astérisque</td>
-          </tr><tr class="row-12 even">
-            <td class="column-1">+</td><td class="column-2">Alt+ 43</td><td class="column-3">&amp;#43;</td><td class="column-4">-</td><td class="column-5">Plus</td>
-          </tr><tr class="row-13 odd">
-            <td class="column-1">,</td><td class="column-2">Alt+ 44</td><td class="column-3">&amp;#44;</td><td class="column-4">-</td><td class="column-5">Virgule</td>
-          </tr><tr class="row-14 even">
-            <td class="column-1">-</td><td class="column-2">Alt+ 45</td><td class="column-3">&amp;#45;</td><td class="column-4">-</td><td class="column-5">Moins</td>
-          </tr><tr class="row-15 odd">
-            <td class="column-1">.</td><td class="column-2">Alt+ 46</td><td class="column-3">&amp;#46;</td><td class="column-4">-</td><td class="column-5">Point</td>
-          </tr><tr class="row-16 even">
-            <td class="column-1">/</td><td class="column-2">Alt+ 47</td><td class="column-3">&amp;#47;</td><td class="column-4">-</td><td class="column-5">Barre oblique (slash)</td>
-          </tr><tr class="row-17 odd">
-            <td class="column-1">:</td><td class="column-2">Alt+ 58</td><td class="column-3">&amp;#58;</td><td class="column-4">-</td><td class="column-5">Double point</td>
-          </tr><tr class="row-18 even">
-            <td class="column-1">;</td><td class="column-2">Alt+ 59</td><td class="column-3">&amp;#59;</td><td class="column-4">-</td><td class="column-5">Point-virgule</td>
-          </tr><tr class="row-19 odd">
-            <td class="column-1">&lt;</td><td class="column-2">Alt+ 60</td><td class="column-3">&amp;#60;</td><td class="column-4">&amp;lt;</td><td class="column-5">Signe inférieur</td>
-          </tr><tr class="row-20 even">
-            <td class="column-1">=</td><td class="column-2">Alt+ 60</td><td class="column-3">&amp;#61;</td><td class="column-4">-</td><td class="column-5">Égal</td>
-          </tr><tr class="row-21 odd">
-            <td class="column-1">&gt;</td><td class="column-2">Alt+ 62</td><td class="column-3">&amp;#62;</td><td class="column-4">&amp;gt;</td><td class="column-5">Signe supérieur</td>
-          </tr><tr class="row-22 even">
-            <td class="column-1">?</td><td class="column-2">Alt+ 63</td><td class="column-3">&amp;#63;</td><td class="column-4">-</td><td class="column-5">Point d'interrogation</td>
-          </tr><tr class="row-23 odd">
-            <td class="column-1">@</td><td class="column-2">Alt+ 64</td><td class="column-3">&amp;#64;</td><td class="column-4">-</td><td class="column-5">Arobase</td>
-          </tr><tr class="row-24 even">
-            <td class="column-1">[</td><td class="column-2">Alt+ 91</td><td class="column-3">&amp;#91;</td><td class="column-4">-</td><td class="column-5">Crochet gauche</td>
-          </tr><tr class="row-25 odd">
-            <td class="column-1">\</td><td class="column-2">Alt+ 92</td><td class="column-3">&amp;#92;</td><td class="column-4">-</td><td class="column-5">Barre oblique inversée</td>
-          </tr><tr class="row-26 even">
-            <td class="column-1">]</td><td class="column-2">Alt+ 93</td><td class="column-3">&amp;#93;</td><td class="column-4">-</td><td class="column-5">Crochet droit</td>
-          </tr><tr class="row-27 odd">
-            <td class="column-1">^</td><td class="column-2">Alt+ 94</td><td class="column-3">&amp;#94;</td><td class="column-4">-</td><td class="column-5">Accent circonflexe</td>
-          </tr><tr class="row-28 even">
-            <td class="column-1">_</td><td class="column-2">Alt+ 95</td><td class="column-3">&amp;#95;</td><td class="column-4">-</td><td class="column-5">Tiret bas (underscore)</td>
-          </tr><tr class="row-29 odd">
-            <td class="column-1">`</td><td class="column-2">Alt+ 96</td><td class="column-3">&amp;#96;</td><td class="column-4">-</td><td class="column-5">Accent grave</td>
-          </tr><tr class="row-30 even">
-            <td class="column-1">{</td><td class="column-2">Alt+ 123</td><td class="column-3">&amp;#123;</td><td class="column-4">-</td><td class="column-5">Accolade gauche</td>
-          </tr><tr class="row-31 odd">
-            <td class="column-1">|</td><td class="column-2">Alt+ 124</td><td class="column-3">&amp;#124;</td><td class="column-4">-</td><td class="column-5">Barre verticale</td>
-          </tr><tr class="row-32 even">
-            <td class="column-1">}</td><td class="column-2">Alt+ 125</td><td class="column-3">&amp;#125;</td><td class="column-4">-</td><td class="column-5">Accolade droite</td>
-          </tr><tr class="row-33 odd">
-            <td class="column-1">~</td><td class="column-2">Alt+ 126</td><td class="column-3">&amp;#126;</td><td class="column-4">-</td><td class="column-5">Tilde</td>
-          </tr><tr class="row-34 even">
-            <td class="column-1">¡</td><td class="column-2">Alt+ 161</td><td class="column-3">&amp;#161;</td><td class="column-4">&amp;iexcl;</td><td class="column-5">Point d'exclamation inversé</td>
-          </tr><tr class="row-35 odd">
-            <td class="column-1">¦</td><td class="column-2">Alt+ 166</td><td class="column-3">&amp;#166;</td><td class="column-4">&amp;brvbar;</td><td class="column-5">Barre cassée verticale</td>
-          </tr><tr class="row-36 even">
-            <td class="column-1">§</td><td class="column-2">Alt+ 167</td><td class="column-3">&amp;#167;</td><td class="column-4">&amp;sect;</td><td class="column-5">Paragraphe</td>
-          </tr><tr class="row-37 odd">
-            <td class="column-1">¨</td><td class="column-2">Alt+ 168</td><td class="column-3">&amp;#168;</td><td class="column-4">&amp;uml;</td><td class="column-5">Diérèse, tréma</td>
-          </tr><tr class="row-38 even">
-            <td class="column-1">©</td><td class="column-2">Alt+ 169</td><td class="column-3">&amp;#169;</td><td class="column-4">&amp;copy;</td><td class="column-5">Signe de copyright</td>
-          </tr><tr class="row-39 odd">
-            <td class="column-1">ª</td><td class="column-2">Alt+ 170</td><td class="column-3">&amp;#170;</td><td class="column-4">&amp;ordf;</td><td class="column-5">Indicateur ordinal féminin</td>
-          </tr><tr class="row-40 even">
-            <td class="column-1">«</td><td class="column-2">Alt+ 171</td><td class="column-3">&amp;#171;</td><td class="column-4">&amp;laquo;</td><td class="column-5">Guillemets à la française (ouverts)</td>
-          </tr><tr class="row-41 odd">
-            <td class="column-1">®</td><td class="column-2">Alt+ 174</td><td class="column-3">&amp;#174;</td><td class="column-4">&amp;reg;</td><td class="column-5">Registered</td>
-          </tr><tr class="row-42 even">
-            <td class="column-1">¯</td><td class="column-2">Alt+ 175</td><td class="column-3">&amp;#175;</td><td class="column-4">&amp;macr;</td><td class="column-5">Macron</td>
-          </tr><tr class="row-43 odd">
-            <td class="column-1">°</td><td class="column-2">Alt+ 176</td><td class="column-3">&amp;#176;</td><td class="column-4">&amp;deg;</td><td class="column-5">Degré</td>
-          </tr><tr class="row-44 even">
-            <td class="column-1">±</td><td class="column-2">Alt+ 177</td><td class="column-3">&amp;#177;</td><td class="column-4">&amp;plusmn;</td><td class="column-5">Signe plus-moins</td>
-          </tr><tr class="row-45 odd">
-            <td class="column-1">²</td><td class="column-2">Alt+ 178</td><td class="column-3">&amp;#178;</td><td class="column-4">&amp;sup2;</td><td class="column-5">Exposant deux</td>
-          </tr><tr class="row-46 even">
-            <td class="column-1">³</td><td class="column-2">Alt+ 179</td><td class="column-3">&amp;#179;</td><td class="column-4">&amp;sup3;</td><td class="column-5">Exposant trois</td>
-          </tr><tr class="row-47 odd">
-            <td class="column-1">´</td><td class="column-2">Alt+ 180</td><td class="column-3">&amp;#180;</td><td class="column-4">&amp;aigu;</td><td class="column-5">Accent aigu</td>
-          </tr><tr class="row-48 even">
-            <td class="column-1">µ</td><td class="column-2">Alt+ 181</td><td class="column-3">&amp;#181;</td><td class="column-4">&amp;micro;</td><td class="column-5">Micro</td>
-          </tr><tr class="row-49 odd">
-            <td class="column-1">·</td><td class="column-2">Alt+ 183</td><td class="column-3">&amp;#183;</td><td class="column-4">&amp;middot;</td><td class="column-5">Point médian</td>
-          </tr><tr class="row-50 even">
-            <td class="column-1">¹</td><td class="column-2">Alt+ 185</td><td class="column-3">&amp;#185;</td><td class="column-4">&amp;sup1;</td><td class="column-5">Exposant un</td>
-          </tr><tr class="row-51 odd">
-            <td class="column-1">º</td><td class="column-2">Alt+ 186</td><td class="column-3">&amp;#186;</td><td class="column-4">&amp;ordm;</td><td class="column-5">Indicateur ordinal masculin</td>
-          </tr><tr class="row-52 even">
-            <td class="column-1">»</td><td class="column-2">Alt+ 187</td><td class="column-3">&amp;#187;</td><td class="column-4">&amp;raquo;</td><td class="column-5">Guillemets à la française (fermés)</td>
-          </tr><tr class="row-53 odd">
-            <td class="column-1">¼</td><td class="column-2">Alt+ 188</td><td class="column-3">&amp;#188;</td><td class="column-4">&amp;frac14;</td><td class="column-5">Fraction un quart</td>
-          </tr><tr class="row-54 even">
-            <td class="column-1">½</td><td class="column-2">Alt+ 189</td><td class="column-3">&amp;#189;</td><td class="column-4">&amp;frac12;</td><td class="column-5">Fraction un demi</td>
-          </tr><tr class="row-55 odd">
-            <td class="column-1">¾</td><td class="column-2">Alt+ 190</td><td class="column-3">&amp;#190;</td><td class="column-4">&amp;frac34;</td><td class="column-5">Fraction trois quarts</td>
-          </tr><tr class="row-56 even">
-            <td class="column-1">¿</td><td class="column-2">Alt+ 191</td><td class="column-3">&amp;#191</td><td class="column-4">&amp;iquest;</td><td class="column-5">Point d'interrogation inversé</td>
-          </tr><tr class="row-57 odd">
-            <td class="column-1">×</td><td class="column-2">Alt+ 215</td><td class="column-3">&amp;#215</td><td class="column-4">&amp;times;</td><td class="column-5">Signe de multiplication</td>
-          </tr><tr class="row-58 even">
-            <td class="column-1">÷</td><td class="column-2">Alt+ 247</td><td class="column-3">&amp;#247</td><td class="column-4">&amp;divide;</td><td class="column-5">Signe de division</td>
-          </tr><tr class="row-59 odd">
-            <td class="column-1">∞</td><td class="column-2">Alt+ 8734</td><td class="column-3">&amp;#8734;</td><td class="column-4">&amp;infin;</td><td class="column-5">Infini</td>
-          </tr><tr class="row-60 even">
-            <td class="column-1">‰</td><td class="column-2">Alt+ 8240</td><td class="column-3">&amp;#8240;</td><td class="column-4">&amp;permil;</td><td class="column-5">Pour mille</td>
+            <td class="column-1">!</td>
+            <td class="column-2">Alt+ 33</td>
+            <td class="column-3">&amp;#33;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Point d'exclamation</td>
+          </tr>
+          <tr class="row-3 odd">
+            <td class="column-1">"</td>
+            <td class="column-2">Alt+ 34</td>
+            <td class="column-3">&amp;#34;</td>
+            <td class="column-4">&amp;quot;</td>
+            <td class="column-5">Guillemets à l'anglaise</td>
+          </tr>
+          <tr class="row-4 even">
+            <td class="column-1">#</td>
+            <td class="column-2">Alt+ 35</td>
+            <td class="column-3">&amp;#35;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Dièse / Numéro</td>
+          </tr>
+          <tr class="row-5 odd">
+            <td class="column-1">$</td>
+            <td class="column-2">Alt+ 36</td>
+            <td class="column-3">&amp;#36;</td>
+            <td class="column-4">&amp;dollar;</td>
+            <td class="column-5">Dollar</td>
+          </tr>
+          <tr class="row-6 even">
+            <td class="column-1">%</td>
+            <td class="column-2">Alt+ 37</td>
+            <td class="column-3">&amp;#37;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Pourcent</td>
+          </tr>
+          <tr class="row-7 odd">
+            <td class="column-1">&amp;</td>
+            <td class="column-2">Alt+ 38</td>
+            <td class="column-3">&amp;#38;</td>
+            <td class="column-4">&amp;amp;</td>
+            <td class="column-5">Esperluette</td>
+          </tr>
+          <tr class="row-8 even">
+            <td class="column-1">'</td>
+            <td class="column-2">Alt+ 39</td>
+            <td class="column-3">&amp;#39;</td>
+            <td class="column-4">&amp;apos;</td>
+            <td class="column-5">Apostrophe</td>
+          </tr>
+          <tr class="row-9 odd">
+            <td class="column-1">(</td>
+            <td class="column-2">Alt+ 40</td>
+            <td class="column-3">&amp;#40;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Parenthèse gauche</td>
+          </tr>
+          <tr class="row-10 even">
+            <td class="column-1">)</td>
+            <td class="column-2">Alt+ 41</td>
+            <td class="column-3">&amp;#41;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Parenthèse droite</td>
+          </tr>
+          <tr class="row-11 odd">
+            <td class="column-1">*</td>
+            <td class="column-2">Alt+ 42</td>
+            <td class="column-3">&amp;#42;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Astérisque</td>
+          </tr>
+          <tr class="row-12 even">
+            <td class="column-1">+</td>
+            <td class="column-2">Alt+ 43</td>
+            <td class="column-3">&amp;#43;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Plus</td>
+          </tr>
+          <tr class="row-13 odd">
+            <td class="column-1">,</td>
+            <td class="column-2">Alt+ 44</td>
+            <td class="column-3">&amp;#44;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Virgule</td>
+          </tr>
+          <tr class="row-14 even">
+            <td class="column-1">-</td>
+            <td class="column-2">Alt+ 45</td>
+            <td class="column-3">&amp;#45;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Moins</td>
+          </tr>
+          <tr class="row-15 odd">
+            <td class="column-1">.</td>
+            <td class="column-2">Alt+ 46</td>
+            <td class="column-3">&amp;#46;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Point</td>
+          </tr>
+          <tr class="row-16 even">
+            <td class="column-1">/</td>
+            <td class="column-2">Alt+ 47</td>
+            <td class="column-3">&amp;#47;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Barre oblique (slash)</td>
+          </tr>
+          <tr class="row-17 odd">
+            <td class="column-1">:</td>
+            <td class="column-2">Alt+ 58</td>
+            <td class="column-3">&amp;#58;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Double point</td>
+          </tr>
+          <tr class="row-18 even">
+            <td class="column-1">;</td>
+            <td class="column-2">Alt+ 59</td>
+            <td class="column-3">&amp;#59;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Point-virgule</td>
+          </tr>
+          <tr class="row-19 odd">
+            <td class="column-1">&lt;</td>
+            <td class="column-2">Alt+ 60</td>
+            <td class="column-3">&amp;#60;</td>
+            <td class="column-4">&amp;lt;</td>
+            <td class="column-5">Signe inférieur</td>
+          </tr>
+          <tr class="row-20 even">
+            <td class="column-1">=</td>
+            <td class="column-2">Alt+ 60</td>
+            <td class="column-3">&amp;#61;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Égal</td>
+          </tr>
+          <tr class="row-21 odd">
+            <td class="column-1">&gt;</td>
+            <td class="column-2">Alt+ 62</td>
+            <td class="column-3">&amp;#62;</td>
+            <td class="column-4">&amp;gt;</td>
+            <td class="column-5">Signe supérieur</td>
+          </tr>
+          <tr class="row-22 even">
+            <td class="column-1">?</td>
+            <td class="column-2">Alt+ 63</td>
+            <td class="column-3">&amp;#63;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Point d'interrogation</td>
+          </tr>
+          <tr class="row-23 odd">
+            <td class="column-1">@</td>
+            <td class="column-2">Alt+ 64</td>
+            <td class="column-3">&amp;#64;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Arobase</td>
+          </tr>
+          <tr class="row-24 even">
+            <td class="column-1">[</td>
+            <td class="column-2">Alt+ 91</td>
+            <td class="column-3">&amp;#91;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Crochet gauche</td>
+          </tr>
+          <tr class="row-25 odd">
+            <td class="column-1">\</td>
+            <td class="column-2">Alt+ 92</td>
+            <td class="column-3">&amp;#92;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Barre oblique inversée</td>
+          </tr>
+          <tr class="row-26 even">
+            <td class="column-1">]</td>
+            <td class="column-2">Alt+ 93</td>
+            <td class="column-3">&amp;#93;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Crochet droit</td>
+          </tr>
+          <tr class="row-27 odd">
+            <td class="column-1">^</td>
+            <td class="column-2">Alt+ 94</td>
+            <td class="column-3">&amp;#94;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Accent circonflexe</td>
+          </tr>
+          <tr class="row-28 even">
+            <td class="column-1">_</td>
+            <td class="column-2">Alt+ 95</td>
+            <td class="column-3">&amp;#95;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Tiret bas (underscore)</td>
+          </tr>
+          <tr class="row-29 odd">
+            <td class="column-1">`</td>
+            <td class="column-2">Alt+ 96</td>
+            <td class="column-3">&amp;#96;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Accent grave</td>
+          </tr>
+          <tr class="row-30 even">
+            <td class="column-1">{</td>
+              <td class="column-2">Alt+ 123</td>
+              <td class="column-3">&amp;#123;</td>
+              <td class="column-4">-</td>
+              <td class="column-5">Accolade gauche</td>
+          </tr>
+          <tr class="row-31 odd">
+            <td class="column-1">|</td>
+            <td class="column-2">Alt+ 124</td>
+            <td class="column-3">&amp;#124;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Barre verticale</td>
+          </tr>
+          <tr class="row-32 even">
+            <td class="column-1">}</td>
+            <td class="column-2">Alt+ 125</td>
+            <td class="column-3">&amp;#125;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Accolade droite</td>
+          </tr>
+          <tr class="row-33 odd">
+            <td class="column-1">~</td>
+            <td class="column-2">Alt+ 126</td>
+            <td class="column-3">&amp;#126;</td>
+            <td class="column-4">-</td>
+            <td class="column-5">Tilde</td>
+          </tr>
+          <tr class="row-34 even">
+            <td class="column-1">¡</td>
+            <td class="column-2">Alt+ 161</td>
+            <td class="column-3">&amp;#161;</td>
+            <td class="column-4">&amp;iexcl;</td>
+            <td class="column-5">Point d'exclamation inversé</td>
+          </tr>
+          <tr class="row-35 odd">
+            <td class="column-1">¦</td>
+            <td class="column-2">Alt+ 166</td>
+            <td class="column-3">&amp;#166;</td>
+            <td class="column-4">&amp;brvbar;</td>
+            <td class="column-5">Barre cassée verticale</td>
+          </tr>
+          <tr class="row-36 even">
+            <td class="column-1">§</td>
+            <td class="column-2">Alt+ 167</td>
+            <td class="column-3">&amp;#167;</td>
+            <td class="column-4">&amp;sect;</td>
+            <td class="column-5">Paragraphe</td>
+          </tr>
+          <tr class="row-37 odd">
+            <td class="column-1">¨</td>
+            <td class="column-2">Alt+ 168</td>
+            <td class="column-3">&amp;#168;</td>
+            <td class="column-4">&amp;uml;</td>
+            <td class="column-5">Diérèse, tréma</td>
+          </tr>
+          <tr class="row-38 even">
+            <td class="column-1">©</td>
+            <td class="column-2">Alt+ 169</td>
+            <td class="column-3">&amp;#169;</td>
+            <td class="column-4">&amp;copy;</td>
+            <td class="column-5">Signe de copyright</td>
+          </tr>
+          <tr class="row-39 odd">
+            <td class="column-1">ª</td>
+            <td class="column-2">Alt+ 170</td>
+            <td class="column-3">&amp;#170;</td>
+            <td class="column-4">&amp;ordf;</td>
+            <td class="column-5">Indicateur ordinal féminin</td>
+          </tr>
+          <tr class="row-40 even">
+            <td class="column-1">«</td>
+            <td class="column-2">Alt+ 171</td>
+            <td class="column-3">&amp;#171;</td>
+            <td class="column-4">&amp;laquo;</td>
+            <td class="column-5">Guillemets à la française (ouverts)</td>
+          </tr>
+          <tr class="row-41 odd">
+            <td class="column-1">®</td>
+            <td class="column-2">Alt+ 174</td>
+            <td class="column-3">&amp;#174;</td>
+            <td class="column-4">&amp;reg;</td>
+            <td class="column-5">Registered</td>
+          </tr>
+          <tr class="row-42 even">
+            <td class="column-1">¯</td>
+            <td class="column-2">Alt+ 175</td>
+            <td class="column-3">&amp;#175;</td>
+            <td class="column-4">&amp;macr;</td>
+            <td class="column-5">Macron</td>
+          </tr>
+          <tr class="row-43 odd">
+            <td class="column-1">°</td>
+            <td class="column-2">Alt+ 176</td>
+            <td class="column-3">&amp;#176;</td>
+            <td class="column-4">&amp;deg;</td>
+            <td class="column-5">Degré</td>
+          </tr>
+          <tr class="row-44 even">
+            <td class="column-1">±</td>
+            <td class="column-2">Alt+ 177</td>
+            <td class="column-3">&amp;#177;</td>
+            <td class="column-4">&amp;plusmn;</td>
+            <td class="column-5">Signe plus-moins</td>
+          </tr>
+          <tr class="row-45 odd">
+            <td class="column-1">²</td>
+            <td class="column-2">Alt+ 178</td>
+            <td class="column-3">&amp;#178;</td>
+            <td class="column-4">&amp;sup2;</td>
+            <td class="column-5">Exposant deux</td>
+          </tr>
+          <tr class="row-46 even">
+            <td class="column-1">³</td>
+            <td class="column-2">Alt+ 179</td>
+            <td class="column-3">&amp;#179;</td>
+            <td class="column-4">&amp;sup3;</td>
+            <td class="column-5">Exposant trois</td>
+          </tr>
+          <tr class="row-47 odd">
+            <td class="column-1">´</td>
+            <td class="column-2">Alt+ 180</td>
+            <td class="column-3">&amp;#180;</td>
+            <td class="column-4">&amp;aigu;</td>
+            <td class="column-5">Accent aigu</td>
+          </tr>
+          <tr class="row-48 even">
+            <td class="column-1">µ</td>
+            <td class="column-2">Alt+ 181</td>
+            <td class="column-3">&amp;#181;</td>
+            <td class="column-4">&amp;micro;</td>
+            <td class="column-5">Micro</td>
+          </tr>
+          <tr class="row-49 odd">
+            <td class="column-1">·</td>
+            <td class="column-2">Alt+ 183</td>
+            <td class="column-3">&amp;#183;</td>
+            <td class="column-4">&amp;middot;</td>
+            <td class="column-5">Point médian</td>
+          </tr>
+          <tr class="row-50 even">
+            <td class="column-1">¹</td>
+            <td class="column-2">Alt+ 185</td>
+            <td class="column-3">&amp;#185;</td>
+            <td class="column-4">&amp;sup1;</td>
+            <td class="column-5">Exposant un</td>
+          </tr>
+          <tr class="row-51 odd">
+            <td class="column-1">º</td>
+            <td class="column-2">Alt+ 186</td>
+            <td class="column-3">&amp;#186;</td>
+            <td class="column-4">&amp;ordm;</td>
+            <td class="column-5">Indicateur ordinal masculin</td>
+          </tr>
+          <tr class="row-52 even">
+            <td class="column-1">»</td>
+            <td class="column-2">Alt+ 187</td>
+            <td class="column-3">&amp;#187;</td>
+            <td class="column-4">&amp;raquo;</td>
+            <td class="column-5">Guillemets à la française (fermés)</td>
+          </tr>
+          <tr class="row-53 odd">
+            <td class="column-1">¼</td>
+            <td class="column-2">Alt+ 188</td>
+            <td class="column-3">&amp;#188;</td>
+            <td class="column-4">&amp;frac14;</td>
+            <td class="column-5">Fraction un quart</td>
+          </tr>
+          <tr class="row-54 even">
+            <td class="column-1">½</td>
+            <td class="column-2">Alt+ 189</td>
+            <td class="column-3">&amp;#189;</td>
+            <td class="column-4">&amp;frac12;</td>
+            <td class="column-5">Fraction un demi</td>
+          </tr>
+          <tr class="row-55 odd">
+            <td class="column-1">¾</td>
+            <td class="column-2">Alt+ 190</td>
+            <td class="column-3">&amp;#190;</td>
+            <td class="column-4">&amp;frac34;</td>
+            <td class="column-5">Fraction trois quarts</td>
+          </tr>
+          <tr class="row-56 even">
+            <td class="column-1">¿</td>
+            <td class="column-2">Alt+ 191</td>
+            <td class="column-3">&amp;#191</td>
+            <td class="column-4">&amp;iquest;</td>
+            <td class="column-5">Point d'interrogation inversé</td>
+          </tr>
+          <tr class="row-57 odd">
+            <td class="column-1">×</td>
+            <td class="column-2">Alt+ 215</td>
+            <td class="column-3">&amp;#215</td>
+            <td class="column-4">&amp;times;</td>
+            <td class="column-5">Signe de multiplication</td>
+          </tr>
+          <tr class="row-58 even">
+            <td class="column-1">÷</td>
+            <td class="column-2">Alt+ 247</td>
+            <td class="column-3">&amp;#247</td>
+            <td class="column-4">&amp;divide;</td>
+            <td class="column-5">Signe de division</td>
+          </tr>
+          <tr class="row-59 odd">
+            <td class="column-1">∞</td>
+            <td class="column-2">Alt+ 8734</td>
+            <td class="column-3">&amp;#8734;</td>
+            <td class="column-4">&amp;infin;</td>
+            <td class="column-5">Infini</td>
+          </tr>
+          <tr class="row-60 even">
+            <td class="column-1">‰</td>
+            <td class="column-2">Alt+ 8240</td>
+            <td class="column-3">&amp;#8240;</td>
+            <td class="column-4">&amp;permil;</td>
+            <td class="column-5">Pour mille</td>
           </tr><tr class="row-61 odd">
-            <td class="column-1">™</td><td class="column-2">Alt+ 8482</td><td class="column-3">&amp;#8482;</td><td class="column-4">&amp;trade;</td><td class="column-5">Registered Trademark</td>
-          </tr></tbody>
+            <td class="column-1">™</td>
+            <td class="column-2">Alt+ 8482</td>
+            <td class="column-3">&amp;#8482;</td>
+            <td class="column-4">&amp;trade;</td>
+            <td class="column-5">Registered Trademark</td>
+          </tr>
+        </tbody>
           </table>
   <!-- --------------------- FIN DU TABLEAU DES DIFFERENTES BALISES------   -->
       <h3>Attributs</h3>
