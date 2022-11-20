@@ -1,4 +1,4 @@
-/*On commence par les sélécteurs généraux.*/
+/*Configuration des éléments généraux.*/
 * {
     font-family: Arial, Helvetica, sans-serif, serif;
 }
@@ -8,6 +8,26 @@ body {
     padding: 0;
     background-color: rgb(255, 255, 146);
 }
+/* Style des titres*/
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
+h5 {
+    font-size: 1rem;
+}
+h6 {
+    font-size: 0.8rem;
+}
+*/
 /*On poursuit avec la section navigation*/
 nav {
     display: inline-block;
@@ -47,6 +67,11 @@ main {
     margin: 0.5rem;    
 }
 
+.centeredp {
+    text-align: center;
+    font-size: 1.3em;
+}
+
 .conteneurDeCode {
     display: block;
     font-size: 0.7em;
@@ -63,6 +88,7 @@ main {
     padding-left: 5%;
     overflow-x:hidden;
     width: auto;
+    font-size: 15px;
 }
 /**/
 
